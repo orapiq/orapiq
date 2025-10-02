@@ -144,9 +144,11 @@ body {
     flex-direction: row;
   }
   .menu-toggle {
-    display: none;
+    display: none; /* Oculta iconos en desktop */
   }
 }
+
+
 
 
 
