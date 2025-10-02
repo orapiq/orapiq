@@ -38,6 +38,7 @@ body {
   font-weight: 700;
 }
 
+/* Menú superior */
 .menu {
   display: flex;
   justify-content: space-between;
@@ -45,11 +46,15 @@ body {
 }
 
 .navbar ul {
-  display: flex;
+  display: none;
   gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.navbar.active ul {
+  display: flex;
 }
 
 .navbar a {
@@ -62,6 +67,12 @@ body {
 
 .navbar a:hover {
   color: #000;
+}
+
+/* Iconos menú */
+.menu-icono {
+  width: 30px;
+  cursor: pointer;
 }
 
 /* HERO */
@@ -116,3 +127,12 @@ body {
   padding: 20px;
   font-size: 14px;
 }
+
+/* Responsive */
+@media(min-width:768px){
+  .navbar ul {
+    display: flex !important;
+  }
+}
+
+
