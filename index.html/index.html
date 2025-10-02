@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>orapiq</title>
-    <!-- Enlace correcto al CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/ffffff/cooking-book.png" type="image/png">
 </head>
 <body>
 
 <header class="header">
     <div class="menu container">
         <a href="#" class="logo">orapiq</a>
-        <input type="checkbox" id="menu">
-        <label for="menu">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" class="menu-icono" alt="Menú">
-        </label>
+
+        <!-- Botones del menú -->
+        <div class="menu-toggle">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" class="menu-icono" alt="Menú" id="menu-open">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/checkmark.png" class="menu-icono" alt="Cerrar" id="menu-close" style="display:none;">
+        </div>
+
         <nav class="navbar">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
             </ul>
         </nav>    
     </div>
@@ -97,18 +99,39 @@
     </div>
 </section>
 
+<!-- Sección de contactos -->
+<section id="contactos" class="contacto">
+    <h2>Contactos</h2>
+    <p>Contáctanos: a.parralesg@outlook.com | Tel: +593 967834634</p>
+</section>
+
 <footer class="footer">
     <div class="container">
         <p>© 2025 orapiq - Todos los derechos reservados</p>
-        <p>Contáctanos: a.parralesg@outlook.com | Tel: +593 967834634 </p>
     </div>
 </footer>
 
+<!-- JS menú -->
+<script>
+    const menuOpen = document.getElementById('menu-open');
+    const menuClose = document.getElementById('menu-close');
+    const navbar = document.querySelector('.navbar');
+
+    menuOpen.addEventListener('click', () => {
+        navbar.classList.add('active');
+        menuOpen.style.display = 'none';
+        menuClose.style.display = 'inline';
+    });
+
+    menuClose.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        menuOpen.style.display = 'inline';
+        menuClose.style.display = 'none';
+    });
+</script>
+
 </body>
 </html>
-
-
-
 
 
 
