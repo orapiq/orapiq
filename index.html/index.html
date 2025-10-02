@@ -1,137 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>orapiq</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Favicon -->
-    <link rel="icon" href="https://img.icons8.com/ios-filled/50/ffffff/cooking-book.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orapiq</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/ffffff/cooking-book.png" type="image/png">
 </head>
 <body>
 
-<header class="header">
+  <!-- HEADER -->
+  <header class="header">
     <div class="menu container">
-        <a href="#" class="logo">orapiq</a>
+      <a href="#" class="logo">Orapiq</a>
 
-        <!-- Botones del menú -->
-        <div class="menu-toggle">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/menu--v1.png" class="menu-icono" alt="Menú" id="menu-open">
-            <img src="https://img.icons8.com/ios-filled/50/ffffff/checkmark.png" class="menu-icono" alt="Cerrar" id="menu-close" style="display:none;">
-        </div>
+      <!-- Botón menú hamburguesa -->
+      <div class="menu-toggle">
+        <i class="fas fa-bars" id="menu-open"></i>
+        <i class="fas fa-check" id="menu-close" style="display:none;"></i>
+      </div>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#contactos">Contactos</a></li>
-            </ul>
-        </nav>    
+      <nav class="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#contacto">Contactos</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>orapiq</h1>
-            <p>
-                Bienvenido a orapiq, tu espacio gourmet donde ofrecemos platos frescos, deliciosos y preparados con los mejores ingredientes. Descubre nuestro menú y servicios para llevar tu experiencia gastronómica al siguiente nivel.
-            </p>
-            <a href="#productos" class="btn-1">Ver Menú</a>
-        </div>
+    <div class="header-content container" id="inicio">
+      <h1>Orapiq</h1>
+      <p>
+        Tu espacio donde la frescura y el sabor se encuentran.    
+        Descubre nuestra propuesta gastronómica única.
+      </p>
+      <a href="https://wa.me/593967834634?text=Hola%20quiero%20más%20información" class="btn-1" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contáctanos
+      </a>
     </div>
-</header>
+  </header>
 
-<section class="general container" id="servicios">
-    <h2>Nuestros Servicios</h2>
-    <div class="general-content">
-        <div class="general-1 txt">
-            <h3>Delivery Rápido</h3>
-            <p>Recibe tu comida favorita en tiempo récord, directamente a tu hogar u oficina, siempre caliente y fresca.</p>
-        </div>
-        <div class="general-2 txt">
-            <h3>Catering</h3>
-            <p>Organiza eventos, fiestas o reuniones con nuestro servicio de catering personalizado y platos gourmet.</p>
-        </div>
-        <div class="general-3 txt">
-            <h3>Menú Personalizado</h3>
-            <p>Diseña tu propio menú según tus gustos, dietas especiales o preferencias culinarias.</p>
-        </div>
-    </div>
-</section>
+  <!-- SECCIÓN CONTACTOS -->
+  <section class="contacto container" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📧 a.parralesg@outlook.com</p>
+    <p>📞 +593 967834634</p>
+    <p>
+      <a href="https://wa.me/593967834634?text=Hola%20quiero%20más%20información" class="btn-1" target="_blank">
+        <i class="fab fa-whatsapp"></i> Escríbenos por WhatsApp
+      </a>
+    </p>
+  </section>
 
-<section class="general container" id="productos">
-    <h2>Productos Destacados</h2>
-    <div class="general-content">
-        <div class="general-1 txt">
-            <h3>Pizza Artesanal</h3>
-            <p>Masa casera, ingredientes frescos y combinaciones únicas que encantarán a todos.</p>
-        </div>
-        <div class="general-2 txt">
-            <h3>Burger Gourmet</h3>
-            <p>Hamburguesas premium con carne de calidad y acompañamientos exclusivos.</p>
-        </div>
-        <div class="general-3 txt">
-            <h3>Postres Caseros</h3>
-            <p>Tartas, brownies y dulces preparados con amor y recetas tradicionales.</p>
-        </div>
-    </div>
-</section>
-
-<section class="info-1">
-    <div class="info-content container">
-        <h3>Por qué elegirnos</h3>
-        <div class="info-circle">
-            <div class="circle-txt">
-                <div class="circle-1"><h3>500+</h3></div>
-                <p>Clientes satisfechos cada mes</p>
-            </div>        
-            <div class="circle-txt">
-                <div class="circle-1"><h3>100%</h3></div>
-                <p>Ingredientes frescos y naturales</p>
-            </div>
-            <div class="circle-txt">
-                <div class="circle-1"><h3>24h</h3></div>
-                <p>Delivery disponible todos los días</p>
-            </div>
-            <div class="circle-txt">
-                <div class="circle-1"><h3>5+</h3></div>
-                <p>Años de experiencia en gastronomía</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Sección de contactos -->
-<section id="contactos" class="contacto">
-    <h2>Contactos</h2>
-    <p>Contáctanos: a.parralesg@outlook.com | Tel: +593 967834634</p>
-</section>
-
-<footer class="footer">
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
-        <p>© 2025 orapiq - Todos los derechos reservados</p>
+      <p>© 2025 Orapiq - Todos los derechos reservados</p>
     </div>
-</footer>
+  </footer>
 
-<!-- JS menú -->
-<script>
+  <!-- JS menú responsive -->
+  <script>
     const menuOpen = document.getElementById('menu-open');
     const menuClose = document.getElementById('menu-close');
     const navbar = document.querySelector('.navbar');
 
     menuOpen.addEventListener('click', () => {
-        navbar.classList.add('active');
-        menuOpen.style.display = 'none';
-        menuClose.style.display = 'inline';
+      navbar.classList.add('active');
+      menuOpen.style.display = 'none';
+      menuClose.style.display = 'inline';
     });
 
     menuClose.addEventListener('click', () => {
-        navbar.classList.remove('active');
-        menuOpen.style.display = 'inline';
-        menuClose.style.display = 'none';
+      navbar.classList.remove('active');
+      menuOpen.style.display = 'inline';
+      menuClose.style.display = 'none';
     });
-</script>
+  </script>
 
 </body>
 </html>
-
 
 
