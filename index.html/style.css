@@ -3,10 +3,14 @@
 
 /* Variables de color */
 :root {
-  --verde-principal: #1b4332; /* Verde elegante */
-  --dorado: #d4a373;         /* Doradito pan pita */
+  --verde-principal: #1b4332;
+  --dorado: #d4a373;
   --blanco: #ffffff;
   --gris-fondo: #f8f8f8;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,7 +20,6 @@ body {
   color: var(--verde-principal);
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -38,16 +41,18 @@ body {
   font-weight: 700;
 }
 
-/* Menú superior */
+/* Menú */
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar ul {
   display: none;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -70,8 +75,8 @@ body {
 }
 
 /* Iconos menú */
-.menu-icono {
-  width: 30px;
+.menu-toggle i {
+  font-size: 28px;
   cursor: pointer;
 }
 
@@ -101,6 +106,10 @@ body {
   border-radius: 30px;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
 }
 
 .btn-1:hover {
@@ -132,7 +141,13 @@ body {
 @media(min-width:768px){
   .navbar ul {
     display: flex !important;
+    flex-direction: row;
+  }
+  .menu-toggle {
+    display: none;
   }
 }
+
+
 
 
